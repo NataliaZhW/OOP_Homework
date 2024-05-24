@@ -17,7 +17,7 @@ public:
     {
         return sqrt(pow(x - this->x, 2) + pow(y - this->y, 2));
     }
-    double distanse_metod(Point obgect) // можно написать вариант где принимается именно точка (Point obgect)
+    double distanse_metod(const Point &obgect) // можно написать вариант где принимается именно точка (Point obgect)
     {
         return sqrt(pow(obgect.x - this->x, 2) + pow(obgect.y - this->y, 2));
     }
