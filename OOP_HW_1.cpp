@@ -23,7 +23,7 @@ public:
     }
 };
 
-double distanse_foo(Point &First, Point &Second) // функция, вне класса, принимет две точки
+double distanse_foo(const Point &First, const Point &Second) // функция, вне класса, принимет две точки
 {
     return sqrt(pow(First.getX() - Second.getX(), 2) + pow(First.getY() - Second.getY(), 2));
 }
